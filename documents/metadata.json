@@ -131,6 +131,17 @@
       "tags": ["ugc", "business-plan", "revenue", "content-creation", "lead-generation", "fintech", "productivity"],
       "preview": "Comprehensive UGC business plan: market analysis, 5 niche breakdown (FinTech $10-15K, Productivity $6-12K, Health $5K, Coaching $5-8K, AI $8-10K), 50+ brand targets, daily workflow, 4 email templates, competitive analysis, revenue projections Month 1-6 ($1K → $20K+). Differentiation: GenX authenticity, niche mastery, 48-72hr turnaround.",
       "links": ["concept-ugc", "anil-origin"]
+    },
+    {
+      "id": "content-spiritual-videos-2026-02-08",
+      "title": "Daily Spiritual Videos — 5 Scripts Ready to Film",
+      "path": "content/daily-spiritual-videos-5-scripts.md",
+      "folder": "content",
+      "type": "asset",
+      "createdAt": "2026-02-08T16:15:00.000Z",
+      "tags": ["spiritual", "video-scripts", "content-creation", "healing", "awakening", "daily-content"],
+      "preview": "5 daily spiritual video scripts based on Anil's awakening journey: (1) I Was That Suicidal Kid, (2) The Day I Chose Myself, (3) Your Heart Knows What Your Mind Won't Admit, (4) I Was Meant for This, (5) Safe to Be Loved. Each includes 2-2.5min script, hook, story, takeaway action, CTA. Ready to batch-film today.",
+      "links": ["decision-anil-origin"]
     }
   ],
   "folders": [
@@ -157,8 +168,12 @@
     {
       "name": "services",
       "description": "Service offerings, pricing, and strategy"
+    },
+    {
+      "name": "content",
+      "description": "Content scripts and templates (videos, posts, etc.)"
     }
   ],
-  "lastUpdated": "2026-02-08T15:40:00.000Z",
-  "totalDocuments": 12
+  "lastUpdated": "2026-02-08T16:15:00.000Z",
+  "totalDocuments": 13
 }
