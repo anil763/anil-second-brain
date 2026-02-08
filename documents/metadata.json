@@ -164,6 +164,17 @@
       "tags": ["gentlemans-vault", "launch", "roadmap", "execution", "skool", "march-2026", "day-by-day"],
       "preview": "Complete 21-day launch roadmap: Week 1 (Feb 9-15) Skool setup, Week 2 (Feb 16-22) content creation & pre-launch, Week 3 (Feb 23-Mar 1) launch push. Day-by-day tasks, master checklists by category (Skool, landing page, email, content, community, launch strategy), success metrics, email templates, social content calendar. The definitive guide to launching on March 1.",
       "links": ["project-gentlemans-vault", "asset-video-scripts-2026-02-08", "analysis-competitive-2026-02-08"]
+    },
+    {
+      "id": "strategy-gohighlevel-complete-2026-02-08",
+      "title": "GoHighLevel Complete Implementation Guide",
+      "path": "projects/gohighlevel-complete-implementation-guide.md",
+      "folder": "projects",
+      "type": "strategy",
+      "createdAt": "2026-02-08T18:01:00.000Z",
+      "tags": ["gohighlevel", "funnels", "automation", "email", "crmlandingpages", "revenue", "implementation"],
+      "preview": "Complete GoHighLevel implementation guide: 4 revenue funnels (UGC, $39/$197/$497 spiritual services, Gentleman's Vault pre-launch), 25+ email templates, landing page copy, automation workflows, tag system, SMS sequences, integration points. Step-by-step GHL setup instructions. Everything ready to copy-paste into your GoHighLevel accounts.",
+      "links": ["project-ugc-business-plan-2026-02-08", "project-gentlemans-vault", "strategy-services-pricing-2026-02-08"]
     }
   ],
   "folders": [
