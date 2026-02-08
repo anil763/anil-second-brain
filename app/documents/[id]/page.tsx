@@ -28,6 +28,9 @@ export default function DocumentPage({ params }: { params: { id: string } }) {
         if (doc) {
           setDocument(doc);
           const contentResponse = await fetch(`/api/documents/${doc.path}`);
+          if (!contentResponse.ok) {
+            throw new Error(`Failed to fetch: ${contentResponse.status}`);
+          }
           const data = await contentResponse.json();
           setContent(data.content || '');
         }
