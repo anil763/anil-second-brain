@@ -16,7 +16,39 @@
         "month6": "$20,000",
         "year1": "$30,000/month"
       }
+    },
+    {
+      "id": "gohighlevel-complete-implementation-guide",
+      "title": "GoHighLevel Complete Implementation Guide",
+      "path": "gohighlevel-complete-implementation-guide.md",
+      "type": "implementation-guide",
+      "created": "2026-02-08",
+      "lastUpdated": "2026-02-08",
+      "tags": ["gohighlevel", "automation", "funnels", "email", "ugc", "numerology", "gentlemans-vault", "crm"],
+      "summary": "Definitive 10-section guide for implementing all 3 business funnels in GoHighLevel. Includes 25+ copy-paste email templates, complete landing page copy, workflow diagrams, automation setup instructions, and metrics tracking.",
+      "status": "active",
+      "funnels": {
+        "ugc": {
+          "entry": "Landing page lead capture",
+          "emails": 7,
+          "target": "$2,000/month"
+        },
+        "numerology": {
+          "entry": "$39 reading",
+          "upsells": ["$197 full chart", "$497 annual"],
+          "target": "$1,500/month"
+        },
+        "gentlemansVault": {
+          "entry": "Pre-launch waitlist",
+          "tiers": ["$97", "$297", "$497"],
+          "launchDate": "2026-03-10",
+          "target": "$3,000/month"
+        }
+      },
+      "totalEmailTemplates": 25,
+      "totalLandingPages": 4,
+      "estimatedSetupTime": "8-12 hours"
     }
   ],
-  "lastUpdated": "2026-02-08T10:36:00-05:00"
+  "lastUpdated": "2026-02-08T12:54:00-05:00"
 }
