@@ -28,8 +28,8 @@ export default function DocumentPage({ params }: { params: { id: string } }) {
         if (doc) {
           setDocument(doc);
           const contentResponse = await fetch(`/api/documents/${doc.path}`);
-          const text = await contentResponse.text();
-          setContent(text);
+          const data = await contentResponse.json();
+          setContent(data.content || '');
         }
       } catch (error) {
         console.error('Failed to load document:', error);
@@ -82,11 +82,13 @@ export default function DocumentPage({ params }: { params: { id: string } }) {
         </div>
 
         {/* Content */}
-        <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-8 text-slate-100">
-          <div className="whitespace-pre-wrap font-mono text-sm leading-relaxed">
-            {content}
-          </div>
-        </div>
+        <article className="prose prose-slate max-w-none prose-headings:text-white prose-headings:font-bold prose-p:text-slate-300 prose-a:text-blue-400 prose-strong:text-slate-100 prose-code:text-slate-100 prose-pre:bg-slate-950 prose-pre:border-slate-700">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: content,
+            }}
+          />
+        </article>
       </div>
     </div>
   );
