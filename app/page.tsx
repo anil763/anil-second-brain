@@ -43,19 +43,63 @@ function getTasksForDay(date: Date, weekNum: number): Task[] {
   tasks.push({ id: `${dateStr}-spiritual-film`, text: 'Film 1 spiritual video', category: 'spiritual' });
   tasks.push({ id: `${dateStr}-spiritual-respond`, text: 'Respond to coach inquiries', category: 'spiritual' });
 
-  // Gentleman's Vault Tasks (Week-dependent)
+  // Gentleman's Vault Tasks (Week-dependent, specific day-by-day)
   if (weekNum === 1) {
-    tasks.push({ id: `${dateStr}-vault-skool`, text: 'Work on Skool community setup', category: 'vault' });
-    tasks.push({ id: `${dateStr}-vault-landing`, text: 'Build/refine landing page', category: 'vault' });
+    // Week 1: Skool Setup (Feb 9-15)
+    if (dateStr === '2026-02-09') {
+      tasks.push({ id: `${dateStr}-vault-1`, text: 'Create Skool account, reserve community name', category: 'vault' });
+    } else if (dateStr === '2026-02-10') {
+      tasks.push({ id: `${dateStr}-vault-1`, text: 'Set up 3 membership tiers ($97/$297/$497)', category: 'vault' });
+    } else if (dateStr === '2026-02-11') {
+      tasks.push({ id: `${dateStr}-vault-1`, text: 'Create landing page (description, benefits, pricing)', category: 'vault' });
+    } else if (dateStr === '2026-02-12') {
+      tasks.push({ id: `${dateStr}-vault-1`, text: 'Set up email sequences (welcome, onboarding, value)', category: 'vault' });
+    } else if (dateStr === '2026-02-13') {
+      tasks.push({ id: `${dateStr}-vault-1`, text: 'Create course/module structure in Skool', category: 'vault' });
+    } else if (dateStr === '2026-02-14') {
+      tasks.push({ id: `${dateStr}-vault-1`, text: 'Upload first 5 video scripts to Skool', category: 'vault' });
+    } else if (dateStr === '2026-02-15') {
+      tasks.push({ id: `${dateStr}-vault-1`, text: 'Test member experience (sign up, access content)', category: 'vault' });
+    } else {
+      tasks.push({ id: `${dateStr}-vault-1`, text: 'Continue Skool setup & refinement', category: 'vault' });
+    }
   } else if (weekNum === 2) {
-    tasks.push({ id: `${dateStr}-vault-video`, text: 'Film launch video content', category: 'vault' });
-    tasks.push({ id: `${dateStr}-vault-prep`, text: 'Prepare pre-launch materials', category: 'vault' });
+    // Week 2: Content & Pre-Launch (Feb 16-22)
+    if (dateStr === '2026-02-16') {
+      tasks.push({ id: `${dateStr}-vault-2`, text: 'Film launch video #1 (5 total needed)', category: 'vault' });
+    } else if (dateStr === '2026-02-19') {
+      tasks.push({ id: `${dateStr}-vault-2`, text: 'Create founding member offer (limited time, bonus)', category: 'vault' });
+    } else if (dateStr === '2026-02-20') {
+      tasks.push({ id: `${dateStr}-vault-2`, text: 'Set up Telegram group for members', category: 'vault' });
+    } else if (dateStr === '2026-02-21') {
+      tasks.push({ id: `${dateStr}-vault-2`, text: 'Create & test welcome email sequence (3 emails)', category: 'vault' });
+    } else if (dateStr === '2026-02-22') {
+      tasks.push({ id: `${dateStr}-vault-2`, text: 'Set up waitlist/early access link', category: 'vault' });
+    } else {
+      tasks.push({ id: `${dateStr}-vault-2`, text: 'Film & edit launch videos (target: 5 total)', category: 'vault' });
+      tasks.push({ id: `${dateStr}-vault-2b`, text: '1 launch countdown social post (TikTok/LinkedIn)', category: 'vault' });
+    }
   } else if (weekNum === 3) {
-    tasks.push({ id: `${dateStr}-vault-onboard`, text: 'Member onboarding activities', category: 'vault' });
-    tasks.push({ id: `${dateStr}-vault-engage`, text: 'Community engagement', category: 'vault' });
+    // Week 3: Launch Push (Feb 23 - Mar 1)
+    if (dateStr === '2026-02-23') {
+      tasks.push({ id: `${dateStr}-vault-3`, text: 'Announce launch date (March 1) to email list', category: 'vault' });
+    } else if (dateStr === '2026-02-24') {
+      tasks.push({ id: `${dateStr}-vault-3`, text: 'Start daily launch countdown posts (TikTok, LinkedIn, YouTube)', category: 'vault' });
+    } else if (dateStr === '2026-02-25' || dateStr === '2026-02-26') {
+      tasks.push({ id: `${dateStr}-vault-3`, text: 'Launch teaser posts (testimonials, benefits, stories)', category: 'vault' });
+    } else if (dateStr === '2026-02-27' || dateStr === '2026-02-28') {
+      tasks.push({ id: `${dateStr}-vault-3`, text: 'Final 3-day urgency push (2-3 social posts)', category: 'vault' });
+      tasks.push({ id: `${dateStr}-vault-3b`, text: 'Send urgency email to list', category: 'vault' });
+    } else if (dateStr === '2026-03-01') {
+      tasks.push({ id: `${dateStr}-vault-3`, text: '🚀 LAUNCH DAY - Go live, start accepting members', category: 'vault' });
+      tasks.push({ id: `${dateStr}-vault-3b`, text: 'First day onboarding (welcome calls, answer questions)', category: 'vault' });
+    } else {
+      tasks.push({ id: `${dateStr}-vault-3`, text: 'Continue launch push & member onboarding', category: 'vault' });
+    }
   } else {
-    tasks.push({ id: `${dateStr}-vault-scale`, text: 'Scale outreach (20+ emails)', category: 'vault' });
-    tasks.push({ id: `${dateStr}-vault-grow`, text: 'Member growth activities', category: 'vault' });
+    // Week 4+: Scale (Mar 2-10)
+    tasks.push({ id: `${dateStr}-vault-4`, text: 'Scale outreach (20+ emails to prospects)', category: 'vault' });
+    tasks.push({ id: `${dateStr}-vault-4b`, text: 'Member growth & community engagement', category: 'vault' });
   }
 
   return tasks;
