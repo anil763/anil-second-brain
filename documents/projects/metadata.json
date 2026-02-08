@@ -1,0 +1,22 @@
+{
+  "documents": [
+    {
+      "id": "ugc-business-plan-complete",
+      "title": "UGC Business Plan - Complete Strategy",
+      "path": "ugc-business-plan-complete.md",
+      "type": "business-plan",
+      "created": "2026-02-08",
+      "lastUpdated": "2026-02-08",
+      "tags": ["ugc", "business", "revenue", "strategy", "fintech", "genx"],
+      "summary": "Comprehensive UGC business plan for scaling from $300/month to $30K/month. Covers market analysis, niche breakdown (FinTech, Productivity, AI, Wellness, Spiritual), competitive positioning, lead generation, and monthly milestones.",
+      "status": "active",
+      "goals": {
+        "month1": "$1,000",
+        "month3": "$5,000",
+        "month6": "$20,000",
+        "year1": "$30,000/month"
+      }
+    }
+  ],
+  "lastUpdated": "2026-02-08T10:36:00-05:00"
+}
