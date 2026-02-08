@@ -15,6 +15,7 @@ interface DayTasks {
 }
 
 const CLIENTS = [
+  { name: 'General', color: 'bg-slate-500/20', border: 'border-slate-500', text: 'text-slate-400', dot: 'bg-slate-500' },
   { name: 'Moog', color: 'bg-blue-500/20', border: 'border-blue-500', text: 'text-blue-400', dot: 'bg-blue-500' },
   { name: '311', color: 'bg-purple-500/20', border: 'border-purple-500', text: 'text-purple-400', dot: 'bg-purple-500' },
   { name: 'Sulcoptor Capital', color: 'bg-orange-500/20', border: 'border-orange-500', text: 'text-orange-400', dot: 'bg-orange-500' },
@@ -36,6 +37,8 @@ export default function PresidioDailyPage() {
       // Initialize with Monday tasks
       setDayTasks({
         '2026-02-09': [
+          { id: '0', client: 'General', text: 'Finish training', completed: false },
+          { id: '01', client: 'General', text: 'Change password', completed: false },
           { id: '1', client: 'Moog', text: 'Update pricing', completed: false },
           { id: '2', client: 'Moog', text: 'Submit new PPT', completed: false },
           { id: '3', client: '311', text: 'Update pricing', completed: false },
