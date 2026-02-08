@@ -1,0 +1,153 @@
+{
+  "documents": [
+    {
+      "id": "concept-model-selection",
+      "title": "Model Selection Strategy",
+      "path": "concepts/model-selection-strategy.md",
+      "folder": "concepts",
+      "type": "concept",
+      "createdAt": "2026-02-07T23:00:00.000Z",
+      "tags": ["models", "optimization", "cost", "strategy"],
+      "preview": "Tiered approach to choosing AI models by cost and capability. Kimi first, Haiku default, Sonnet for complex reasoning.",
+      "links": ["rate-limits-and-budget", "cache-hit-strategy"]
+    },
+    {
+      "id": "concept-rate-limits",
+      "title": "Rate Limits & Budget Management",
+      "path": "concepts/rate-limits-and-budget.md",
+      "folder": "concepts",
+      "type": "concept",
+      "createdAt": "2026-02-07T23:00:00.000Z",
+      "tags": ["budget", "rate-limits", "optimization", "constraints"],
+      "preview": "Hard constraints: $5 daily, $200 monthly. 5s between API calls, 10s between searches. Batch work to stay under budget.",
+      "links": ["model-selection-strategy", "cache-hit-strategy"]
+    },
+    {
+      "id": "concept-cache-strategy",
+      "title": "Cache Hit Strategy",
+      "path": "concepts/cache-hit-strategy.md",
+      "folder": "concepts",
+      "type": "concept",
+      "createdAt": "2026-02-07T23:00:00.000Z",
+      "tags": ["cache", "optimization", "efficiency", "batching"],
+      "preview": "Maximize LLM cache efficiency: batch requests in 5-min windows, keep system prompts stable, organize context hierarchically.",
+      "links": ["model-selection-strategy", "rate-limits-and-budget"]
+    },
+    {
+      "id": "decision-anil-origin",
+      "title": "Anil's Origin Story",
+      "path": "decisions/anil-origin-story.md",
+      "folder": "decisions",
+      "type": "decision",
+      "createdAt": "2026-02-07T23:00:00.000Z",
+      "tags": ["origin", "spiritual-awakening", "mission", "transformation", "freedom"],
+      "preview": "From childhood trauma through spiritual awakening. The story that frames everything: pain to purpose, self-abandonment to self-love.",
+      "links": ["numerology-daily-energy", "ugc-content-playbook"]
+    },
+    {
+      "id": "concept-numerology",
+      "title": "Numerology Daily Energy Strategy",
+      "path": "concepts/numerology-daily-energy.md",
+      "folder": "concepts",
+      "type": "concept",
+      "createdAt": "2026-02-07T23:00:00.000Z",
+      "tags": ["numerology", "content-creation", "spiritual-business", "daily-routine", "revenue"],
+      "preview": "Daily numerology readings across 4 platforms. Build spiritual authority, grow audience, generate leads for $97-497 readings.",
+      "links": ["anil-origin", "ugc-content-playbook"]
+    },
+    {
+      "id": "concept-ugc",
+      "title": "UGC Content Playbook",
+      "path": "concepts/ugc-content-playbook.md",
+      "folder": "concepts",
+      "type": "concept",
+      "createdAt": "2026-02-07T23:00:00.000Z",
+      "tags": ["ugc", "genx", "content-creation", "revenue", "brand-partnerships"],
+      "preview": "GenX angle on apps, fintech, tech. 5-7 videos/week via Bento Backstage. Target: $1K in 30 days, $30K by mid-year.",
+      "links": ["anil-origin", "numerology-daily-energy"]
+    },
+    {
+      "id": "project-gentlemans-vault",
+      "title": "Gentleman's Vault — Complete Business Blueprint",
+      "path": "business-plans/gentlemans-vault-complete-blueprint.md",
+      "folder": "projects",
+      "type": "project",
+      "createdAt": "2026-02-08T01:30:00.000Z",
+      "tags": ["gentlemans-vault", "business-plan", "skool", "membership", "revenue", "execution"],
+      "preview": "12-part comprehensive blueprint: market analysis, pricing ($97-$497/mo), Skool setup, 5 content pillars, month-by-month roadmap, marketing funnel, financials, KPIs. Target: $10K+/mo by Month 6.",
+      "links": ["anil-origin", "numerology-daily-energy"]
+    },
+    {
+      "id": "daily-2026-02-07",
+      "title": "Daily Journal - 2026-02-07",
+      "path": "daily-journal/2026-02-07.md",
+      "folder": "daily-journal",
+      "type": "journal",
+      "createdAt": "2026-02-07T23:51:00.000Z",
+      "tags": ["daily", "setup", "models", "cache", "second-brain-launch", "telegram", "wordpress"],
+      "preview": "Configured OpenClaw, established model selection strategy, planned Second Brain project, captured Anil's origin story. Connected Telegram. Installed WordPress skill.",
+      "links": ["anil-origin", "project-gentlemans-vault"]
+    },
+    {
+      "id": "analysis-competitive-2026-02-08",
+      "title": "Gentleman's Vault — Competitive Analysis Deep Dive",
+      "path": "overnight-prs/2026-02-08-gentlemans-vault-competitive-analysis.md",
+      "folder": "overnight-prs",
+      "type": "analysis",
+      "createdAt": "2026-02-08T12:38:00.000Z",
+      "tags": ["gentlemans-vault", "competitive-analysis", "market-research", "strategy", "positioning", "pricing"],
+      "preview": "Comprehensive competitive intelligence: 9 direct competitors analyzed (EVRYMAN, ManKind Project, 4biddenknowledge, etc.), market opportunity matrix, 3 differentiation strategies, pricing comparison, 8 marketing channels for GenX men, 5 unique selling propositions. Identifies the perfect market gap for spiritual + practical + brotherhood positioning.",
+      "links": ["project-gentlemans-vault", "anil-origin"]
+    },
+    {
+      "id": "asset-video-scripts-2026-02-08",
+      "title": "Gentleman's Vault — Video Script Library",
+      "path": "business-plans/gentlemans-vault-video-scripts.md",
+      "folder": "business-plans",
+      "type": "asset",
+      "createdAt": "2026-02-08T13:54:00.000Z",
+      "tags": ["gentlemans-vault", "video-scripts", "content-creation", "marketing", "launch", "sales", "education"],
+      "preview": "Complete production-ready video script library: 25 scripts across 5 categories (Launch, Sales, Educational, Community, Evergreen). Each script includes hook, body, CTA, and platform notes. Ready for immediate filming with status tracker.",
+      "links": ["project-gentlemans-vault", "analysis-competitive-2026-02-08"]
+    },
+    {
+      "id": "strategy-services-pricing-2026-02-08",
+      "title": "Services & Pricing Strategy — Full Analysis & Recommendations",
+      "path": "services/service-offerings-pricing-strategy.md",
+      "folder": "services",
+      "type": "strategy",
+      "createdAt": "2026-02-08T14:10:00.000Z",
+      "tags": ["services", "pricing", "strategy", "coaching", "transformation", "revenue", "positioning"],
+      "preview": "Complete overhaul of service offerings and pricing. 4-tier architecture ($97-$5,000): Quick Read, Full Chart + Coaching, Deep Dive Coaching, Premium Freedom Blueprint. 6 new service ideas (Corporate Escape Coaching, Business Birth Chart, Partner Reading, Monthly Program, Group Workshop, Year Numbers). Premium positioning strategy with sales copy samples and implementation roadmap. Potential: $11K+/month.",
+      "links": ["anil-origin", "project-gentlemans-vault"]
+    }
+  ],
+  "folders": [
+    {
+      "name": "concepts",
+      "description": "Big ideas, frameworks, and mental models"
+    },
+    {
+      "name": "daily-journal",
+      "description": "Daily recaps of conversations and outcomes"
+    },
+    {
+      "name": "projects",
+      "description": "Project-specific documentation"
+    },
+    {
+      "name": "decisions",
+      "description": "Key decisions and their rationale"
+    },
+    {
+      "name": "overnight-prs",
+      "description": "Overnight deliverables and research documents"
+    },
+    {
+      "name": "services",
+      "description": "Service offerings, pricing, and strategy"
+    }
+  ],
+  "lastUpdated": "2026-02-08T14:11:00.000Z",
+  "totalDocuments": 11
+}
