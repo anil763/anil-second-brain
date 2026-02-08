@@ -2,10 +2,11 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, FileText, Folder, Home } from 'lucide-react';
+import { Menu, X, FileText, Folder, Home, Building2 } from 'lucide-react';
 
 const navigationItems = [
   { href: '/', label: 'Dashboard', icon: Home },
+  { href: '/presidio', label: '🏢 Presidio', icon: Building2 },
   { href: '/documents', label: 'Browse Documents', icon: FileText },
 ];
 
