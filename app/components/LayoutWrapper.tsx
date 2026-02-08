@@ -5,8 +5,9 @@ import Link from 'next/link';
 import { Menu, X, FileText, Folder, Home, Building2 } from 'lucide-react';
 
 const navigationItems = [
-  { href: '/', label: 'Dashboard', icon: Home },
-  { href: '/presidio', label: '🏢 Presidio', icon: Building2 },
+  { href: '/', label: 'Business', icon: Home },
+  { href: '/presidio', label: 'Presidio (Weekly)', icon: Building2 },
+  { href: '/presidio-daily', label: 'Presidio (Daily)', icon: FileText },
   { href: '/documents', label: 'Browse Documents', icon: FileText },
 ];
 
