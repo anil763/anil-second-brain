@@ -120,6 +120,17 @@
       "tags": ["services", "pricing", "strategy", "coaching", "transformation", "revenue", "positioning"],
       "preview": "Complete overhaul of service offerings and pricing. 4-tier architecture ($97-$5,000): Quick Read, Full Chart + Coaching, Deep Dive Coaching, Premium Freedom Blueprint. 6 new service ideas (Corporate Escape Coaching, Business Birth Chart, Partner Reading, Monthly Program, Group Workshop, Year Numbers). Premium positioning strategy with sales copy samples and implementation roadmap. Potential: $11K+/month.",
       "links": ["anil-origin", "project-gentlemans-vault"]
+    },
+    {
+      "id": "project-ugc-business-plan-2026-02-08",
+      "title": "UGC Business Plan — Complete Strategy ($1K → $30K)",
+      "path": "projects/ugc-business-plan-complete.md",
+      "folder": "projects",
+      "type": "project",
+      "createdAt": "2026-02-08T15:40:00.000Z",
+      "tags": ["ugc", "business-plan", "revenue", "content-creation", "lead-generation", "fintech", "productivity"],
+      "preview": "Comprehensive UGC business plan: market analysis, 5 niche breakdown (FinTech $10-15K, Productivity $6-12K, Health $5K, Coaching $5-8K, AI $8-10K), 50+ brand targets, daily workflow, 4 email templates, competitive analysis, revenue projections Month 1-6 ($1K → $20K+). Differentiation: GenX authenticity, niche mastery, 48-72hr turnaround.",
+      "links": ["concept-ugc", "anil-origin"]
     }
   ],
   "folders": [
@@ -148,6 +159,6 @@
       "description": "Service offerings, pricing, and strategy"
     }
   ],
-  "lastUpdated": "2026-02-08T14:11:00.000Z",
-  "totalDocuments": 11
+  "lastUpdated": "2026-02-08T15:40:00.000Z",
+  "totalDocuments": 12
 }
