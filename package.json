@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "mkdir -p public && cp -r documents public/",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

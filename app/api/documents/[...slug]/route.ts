@@ -10,13 +10,24 @@ export async function GET(
 ) {
   try {
     const filePath = params.slug.join('/');
-    const docPath = path.join(process.cwd(), 'documents', filePath);
+    // Try public/documents first (production), then documents (dev)
+    let docPath = path.join(process.cwd(), 'public', 'documents', filePath);
+    let docsDir = path.join(process.cwd(), 'public', 'documents');
+    
+    // For development, check if public/documents exists
+    try {
+      await fs.access(docsDir);
+    } catch {
+      // Fall back to documents directory for development
+      docPath = path.join(process.cwd(), 'documents', filePath);
+      docsDir = path.join(process.cwd(), 'documents');
+    }
 
     // Security: Prevent path traversal
     const realPath = await fs.realpath(docPath);
-    const docsDir = await fs.realpath(path.join(process.cwd(), 'documents'));
+    const realDocsDir = await fs.realpath(docsDir);
     
-    if (!realPath.startsWith(docsDir)) {
+    if (!realPath.startsWith(realDocsDir)) {
       return NextResponse.json(
         { error: 'Access denied' },
         { status: 403 }
