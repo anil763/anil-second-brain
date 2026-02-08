@@ -101,7 +101,7 @@ export default function DocumentsPage() {
                   {docs.map((doc) => (
                     <Link
                       key={doc.id}
-                      href={`/?doc=${doc.id}`}
+                      href={`/documents/${doc.id}`}
                       className="block p-4 rounded-lg bg-slate-900/50 border border-slate-800 hover:bg-slate-800/50 hover:border-slate-700 transition-all group"
                     >
                       <div className="flex items-start gap-3">
