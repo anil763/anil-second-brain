@@ -153,6 +153,17 @@
       "tags": ["fiverr", "ugc", "profile", "pricing", "strategy", "freelance", "revenue"],
       "preview": "Complete Fiverr profile setup: 3-tier pricing (Basic $65, Standard $175, Premium $450), SEO-optimized headlines and descriptions, 10 sections covering niche positioning, client messaging, launch strategy, FAQ templates. Copy-paste ready for immediate profile setup. Target: 5-10 orders Month 1, Level 1 seller within 60 days.",
       "links": ["project-ugc-business-plan-2026-02-08", "concept-ugc"]
+    },
+    {
+      "id": "roadmap-launch-march-1-2026-02-08",
+      "title": "Gentleman's Vault — Launch Roadmap to March 1, 2026",
+      "path": "projects/gentlemans-vault-launch-roadmap-march-1.md",
+      "folder": "projects",
+      "type": "roadmap",
+      "createdAt": "2026-02-08T17:40:00.000Z",
+      "tags": ["gentlemans-vault", "launch", "roadmap", "execution", "skool", "march-2026", "day-by-day"],
+      "preview": "Complete 21-day launch roadmap: Week 1 (Feb 9-15) Skool setup, Week 2 (Feb 16-22) content creation & pre-launch, Week 3 (Feb 23-Mar 1) launch push. Day-by-day tasks, master checklists by category (Skool, landing page, email, content, community, launch strategy), success metrics, email templates, social content calendar. The definitive guide to launching on March 1.",
+      "links": ["project-gentlemans-vault", "asset-video-scripts-2026-02-08", "analysis-competitive-2026-02-08"]
     }
   ],
   "folders": [
@@ -185,6 +196,6 @@
       "description": "Content scripts and templates (videos, posts, etc.)"
     }
   ],
-  "lastUpdated": "2026-02-08T16:58:00.000Z",
-  "totalDocuments": 14
+  "lastUpdated": "2026-02-08T17:40:00.000Z",
+  "totalDocuments": 15
 }
