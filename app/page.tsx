@@ -322,8 +322,13 @@ export default function ActionKanban() {
 
   const days = useMemo(() => generate30DayPlan(), []);
   
-  // Get today's date string
-  const todayStr = new Date().toISOString().split('T')[0];
+  // Get today's date string (EST timezone)
+  const getTodayStr = () => {
+    const now = new Date();
+    const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+    return estTime.toISOString().split('T')[0];
+  };
+  const todayStr = getTodayStr();
   // For demo/testing, use this to simulate being in the challenge period:
   // const todayStr = '2026-02-15';
 
