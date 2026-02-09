@@ -346,10 +346,37 @@ export default function ActionKanban() {
     setMounted(true);
   }, [days, todayStr]);
 
-  // Save to localStorage
+  // Load from cloud on mount
+  useEffect(() => {
+    const loadFromCloud = async () => {
+      try {
+        const response = await fetch('/api/dashboard');
+        const data = await response.json();
+        if (data.tasks && Array.isArray(data.tasks)) {
+          setCompletedTasks(new Set(data.tasks));
+        }
+      } catch (err) {
+        console.log('Cloud load failed, using local:', err);
+      }
+    };
+    
+    if (mounted) {
+      loadFromCloud();
+    }
+  }, [mounted]);
+
+  // Save to localStorage & cloud
   useEffect(() => {
     if (mounted) {
-      localStorage.setItem('kanban-completed-tasks', JSON.stringify(Array.from(completedTasks)));
+      const tasks = Array.from(completedTasks);
+      localStorage.setItem('kanban-completed-tasks', JSON.stringify(tasks));
+      
+      // Sync to cloud
+      fetch('/api/dashboard', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tasks }),
+      }).catch(err => console.log('Cloud save failed:', err));
     }
   }, [completedTasks, mounted]);
 
@@ -535,7 +562,7 @@ export default function ActionKanban() {
         {/* Footer */}
         <footer className="mt-8 text-center text-slate-500 text-sm pb-8">
           <p>💪 Every task checked is a step toward $1K/month</p>
-          <p className="mt-1">Data saved locally • Progress persists on reload</p>
+          <p className="mt-1">☁️ Cloud synced • Updates across all devices</p>
         </footer>
       </main>
     </div>
