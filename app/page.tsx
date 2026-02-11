@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { CheckCircle2, Circle, ChevronDown, ChevronRight, Calendar, Target, Flame, BookOpen, DollarSign } from 'lucide-react';
+import { CheckCircle2, Circle, ChevronDown, ChevronRight, Calendar, Target, Flame, DollarSign, Cloud, CloudOff, Loader2, Settings, X } from 'lucide-react';
+import { useCloudSync } from '../hooks/useCloudSync';
 
 // Types
 interface Task {
@@ -141,6 +142,162 @@ function generate30DayPlan(): DayData[] {
   }
 
   return days;
+}
+
+// Sync status indicator component
+function SyncIndicator({ 
+  isConnected, 
+  isSyncing, 
+  lastSynced,
+  onSettingsClick 
+}: { 
+  isConnected: boolean;
+  isSyncing: boolean;
+  lastSynced: Date | null;
+  onSettingsClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onSettingsClick}
+      className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs transition-all ${
+        isConnected 
+          ? 'bg-green-500/20 text-green-400 hover:bg-green-500/30' 
+          : 'bg-slate-700/50 text-slate-400 hover:bg-slate-700'
+      }`}
+    >
+      {isSyncing ? (
+        <Loader2 className="w-3.5 h-3.5 animate-spin" />
+      ) : isConnected ? (
+        <Cloud className="w-3.5 h-3.5" />
+      ) : (
+        <CloudOff className="w-3.5 h-3.5" />
+      )}
+      <span className="hidden sm:inline">
+        {isSyncing ? 'Syncing...' : isConnected ? 'Synced' : 'Local only'}
+      </span>
+      <Settings className="w-3 h-3 opacity-50" />
+    </button>
+  );
+}
+
+// Sync settings modal
+function SyncSettingsModal({
+  isOpen,
+  onClose,
+  syncStatus,
+  isConnected,
+  lastSynced,
+  onSetSyncCode,
+  onDisconnect,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+  syncStatus: { isConfigured: boolean; hasSyncId: boolean; syncId: string | null };
+  isConnected: boolean;
+  lastSynced: Date | null;
+  onSetSyncCode: (code: string) => void;
+  onDisconnect: () => void;
+}) {
+  const [inputCode, setInputCode] = useState('');
+
+  if (!isOpen) return null;
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (inputCode.trim()) {
+      onSetSyncCode(inputCode.trim());
+      setInputCode('');
+    }
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80">
+      <div className="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-md p-6">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-lg font-semibold text-white flex items-center gap-2">
+            <Cloud className="w-5 h-5 text-blue-400" />
+            Cloud Sync Settings
+          </h2>
+          <button
+            onClick={onClose}
+            className="p-1 rounded-lg hover:bg-slate-800 text-slate-400"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+
+        {!syncStatus.isConfigured ? (
+          <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4 mb-4">
+            <p className="text-yellow-400 text-sm">
+              ⚠️ Firebase not configured. Data is stored locally only.
+            </p>
+            <p className="text-slate-400 text-xs mt-2">
+              Add Firebase environment variables to enable cloud sync.
+            </p>
+          </div>
+        ) : isConnected ? (
+          <div className="space-y-4">
+            <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4">
+              <div className="flex items-center gap-2 text-green-400 mb-2">
+                <Cloud className="w-4 h-4" />
+                <span className="font-medium">Connected</span>
+              </div>
+              <p className="text-sm text-slate-300">
+                Sync Code: <span className="font-mono bg-slate-800 px-2 py-0.5 rounded">{syncStatus.syncId}</span>
+              </p>
+              {lastSynced && (
+                <p className="text-xs text-slate-500 mt-2">
+                  Last synced: {lastSynced.toLocaleTimeString()}
+                </p>
+              )}
+            </div>
+            <p className="text-sm text-slate-400">
+              Use the same sync code on another device to keep tasks in sync.
+            </p>
+            <button
+              onClick={onDisconnect}
+              className="w-full py-2 px-4 bg-red-500/20 text-red-400 rounded-lg hover:bg-red-500/30 transition-colors"
+            >
+              Disconnect Sync
+            </button>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label className="block text-sm text-slate-400 mb-2">
+                Enter a sync code to sync across devices
+              </label>
+              <input
+                type="text"
+                value={inputCode}
+                onChange={(e) => setInputCode(e.target.value)}
+                placeholder="e.g., anil, work-laptop, my-tasks"
+                className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+              />
+            </div>
+            <p className="text-xs text-slate-500">
+              💡 Use the same code on all your devices (phone, laptop, etc.) to keep tasks synced in real-time.
+            </p>
+            <button
+              type="submit"
+              disabled={!inputCode.trim()}
+              className="w-full py-3 px-4 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Start Syncing
+            </button>
+          </form>
+        )}
+
+        <div className="mt-4 pt-4 border-t border-slate-700">
+          <p className="text-xs text-slate-500 text-center">
+            {syncStatus.isConfigured 
+              ? '🔒 Data synced securely via Firebase' 
+              : '💾 Data stored in browser localStorage'}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 // Custom checkbox component
@@ -316,8 +473,20 @@ function StatsCard({ icon: Icon, label, value, color }: {
 
 // Main component
 export default function ActionKanban() {
-  const [completedTasks, setCompletedTasks] = useState<Set<string>>(new Set());
+  const {
+    completedTasks,
+    toggleTask,
+    syncStatus,
+    isConnected,
+    isSyncing,
+    lastSynced,
+    setSyncCode,
+    disconnectSync,
+    isLoading,
+  } = useCloudSync();
+  
   const [expandedDays, setExpandedDays] = useState<Set<string>>(new Set());
+  const [showSyncSettings, setShowSyncSettings] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const days = useMemo(() => generate30DayPlan(), []);
@@ -329,46 +498,17 @@ export default function ActionKanban() {
     return estTime.toISOString().split('T')[0];
   };
   const todayStr = getTodayStr();
-  // For demo/testing, use this to simulate being in the challenge period:
-  // const todayStr = '2026-02-15';
 
-  // Load from localStorage
+  // Auto-expand today on mount
   useEffect(() => {
-    const saved = localStorage.getItem('kanban-completed-tasks');
-    if (saved) {
-      setCompletedTasks(new Set(JSON.parse(saved)));
-    }
-    
-    // Auto-expand today
     const today = days.find(d => d.date === todayStr);
     if (today) {
       setExpandedDays(new Set([todayStr]));
     } else {
-      // If not in challenge period, expand first day
       setExpandedDays(new Set([days[0]?.date]));
     }
-    
     setMounted(true);
   }, [days, todayStr]);
-
-  // Save to localStorage
-  useEffect(() => {
-    if (mounted) {
-      localStorage.setItem('kanban-completed-tasks', JSON.stringify(Array.from(completedTasks)));
-    }
-  }, [completedTasks, mounted]);
-
-  const toggleTask = (taskId: string) => {
-    setCompletedTasks(prev => {
-      const next = new Set(prev);
-      if (next.has(taskId)) {
-        next.delete(taskId);
-      } else {
-        next.add(taskId);
-      }
-      return next;
-    });
-  };
 
   const toggleExpand = (date: string) => {
     setExpandedDays(prev => {
@@ -413,10 +553,13 @@ export default function ActionKanban() {
     });
   });
 
-  if (!mounted) {
+  if (!mounted || isLoading) {
     return (
       <div className="flex items-center justify-center h-screen bg-black">
-        <div className="text-slate-400">Loading Action Dashboard...</div>
+        <div className="text-slate-400 flex items-center gap-2">
+          <Loader2 className="w-5 h-5 animate-spin" />
+          Loading Action Dashboard...
+        </div>
       </div>
     );
   }
@@ -434,9 +577,17 @@ export default function ActionKanban() {
               </h1>
               <p className="text-slate-400 text-sm">Feb 9 - Mar 10, 2026 • Mission: $1K/month</p>
             </div>
-            <div className="text-right">
-              <div className="text-3xl font-bold text-blue-400">{overallProgress}%</div>
-              <div className="text-sm text-slate-500">Overall Progress</div>
+            <div className="flex items-center gap-4">
+              <SyncIndicator
+                isConnected={isConnected}
+                isSyncing={isSyncing}
+                lastSynced={lastSynced}
+                onSettingsClick={() => setShowSyncSettings(true)}
+              />
+              <div className="text-right">
+                <div className="text-3xl font-bold text-blue-400">{overallProgress}%</div>
+                <div className="text-sm text-slate-500">Overall Progress</div>
+              </div>
             </div>
           </div>
           
@@ -540,9 +691,24 @@ export default function ActionKanban() {
         {/* Footer */}
         <footer className="mt-8 text-center text-slate-500 text-sm pb-8">
           <p>💪 Every task checked is a step toward $1K/month</p>
-          <p className="mt-1">Data saved locally • Progress persists on reload</p>
+          <p className="mt-1">
+            {isConnected 
+              ? '☁️ Synced across all your devices' 
+              : '💾 Data saved locally • Tap sync icon to enable cloud sync'}
+          </p>
         </footer>
       </main>
+
+      {/* Sync Settings Modal */}
+      <SyncSettingsModal
+        isOpen={showSyncSettings}
+        onClose={() => setShowSyncSettings(false)}
+        syncStatus={syncStatus}
+        isConnected={isConnected}
+        lastSynced={lastSynced}
+        onSetSyncCode={setSyncCode}
+        onDisconnect={disconnectSync}
+      />
     </div>
   );
 }
