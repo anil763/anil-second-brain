@@ -2,6 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getDatabase, Database } from 'firebase/database';
 
 let db: Database | null = null;
+let isConfigured = false;
 
 export function initializeFirebase() {
   // Check if Firebase is already initialized
@@ -10,6 +11,7 @@ export function initializeFirebase() {
   // Check if env vars are configured
   if (!process.env.NEXT_PUBLIC_FIREBASE_API_KEY) {
     console.warn('Firebase not configured - using local storage only');
+    isConfigured = false;
     return null;
   }
 
@@ -26,14 +28,30 @@ export function initializeFirebase() {
 
     const app = initializeApp(firebaseConfig);
     db = getDatabase(app);
+    isConfigured = true;
     console.log('Firebase initialized successfully');
     return db;
   } catch (error) {
     console.error('Firebase initialization error:', error);
+    isConfigured = false;
     return null;
   }
 }
 
 export function getFirebaseDB() {
   return db;
+}
+
+export function getFirebaseDatabase() {
+  if (!db) {
+    initializeFirebase();
+  }
+  return db;
+}
+
+export function isFirebaseConfigured(): boolean {
+  if (!process.env.NEXT_PUBLIC_FIREBASE_API_KEY) {
+    return false;
+  }
+  return isConfigured;
 }
