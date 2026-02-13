@@ -47,6 +47,12 @@ export function syncTasksToCloud(syncId: string, completedTaskIds: string[]): Pr
   }
 
   const db = getFirebaseDatabase();
+  if (!db) {
+    console.warn('Firebase database not initialized, saving locally only');
+    setLocalTasks(completedTaskIds);
+    return Promise.resolve();
+  }
+  
   const tasksRef = ref(db, `users/${syncId}/completedTasks`);
   
   return set(tasksRef, {
@@ -77,6 +83,12 @@ export function subscribeToCloudTasks(
   }
 
   const db = getFirebaseDatabase();
+  if (!db) {
+    console.warn('Firebase database not initialized, using local storage');
+    onUpdate(getLocalTasks());
+    return () => {};
+  }
+  
   const tasksRef = ref(db, `users/${syncId}/completedTasks`);
 
   const handleValue = (snapshot: DataSnapshot) => {
