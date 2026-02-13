@@ -50,8 +50,19 @@ export function getFirebaseDatabase() {
 }
 
 export function isFirebaseConfigured(): boolean {
-  if (!process.env.NEXT_PUBLIC_FIREBASE_API_KEY) {
+  // Check if environment variables are present
+  const hasApiKey = typeof process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== 'undefined' && 
+                    process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== '' &&
+                    process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== 'xxx';
+  
+  if (!hasApiKey) {
     return false;
   }
-  return isConfigured;
+  
+  // Try to initialize if not already done
+  if (!db) {
+    initializeFirebase();
+  }
+  
+  return isConfigured || hasApiKey;
 }
