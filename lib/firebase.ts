@@ -55,6 +55,14 @@ export function isFirebaseConfigured(): boolean {
                     process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== '' &&
                     process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== 'xxx';
   
+  console.log('isFirebaseConfigured check:', {
+    hasApiKey,
+    apiKeyExists: typeof process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== 'undefined',
+    apiKeyValue: process.env.NEXT_PUBLIC_FIREBASE_API_KEY ? '(set)' : '(not set)',
+    isConfigured,
+    dbExists: !!db,
+  });
+  
   if (!hasApiKey) {
     return false;
   }
