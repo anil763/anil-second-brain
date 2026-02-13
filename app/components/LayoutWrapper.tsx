@@ -2,11 +2,12 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, FileText, Folder, Home, Building2, CheckSquare, HardDrive } from 'lucide-react';
+import { Menu, X, FileText, Folder, Home, Building2, CheckSquare, HardDrive, Zap } from 'lucide-react';
 
 const navigationItems = [
   { href: '/', label: 'Business', icon: Home },
   { href: '/personal', label: '📋 Personal Tasks', icon: CheckSquare },
+  { href: '/nilam', label: '⚡ Nilam\'s Tasks', icon: Zap },
   { href: '/memory', label: '💾 Memory Bank', icon: HardDrive },
   { href: '/presidio', label: '🏢 Presidio', icon: Building2 },
   { href: '/documents', label: 'Browse Documents', icon: FileText },
