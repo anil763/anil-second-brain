@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { CheckCircle2, Circle, ChevronDown, ChevronRight, Calendar, Target, Flame, DollarSign, Cloud, CloudOff, Loader2, Settings, X } from 'lucide-react';
 import { useCloudSync } from '../hooks/useCloudSync';
+import { initializeFirebase } from '../lib/firebase';
 
 // Types
 interface Task {
@@ -498,6 +499,11 @@ export default function ActionKanban() {
     return estTime.toISOString().split('T')[0];
   };
   const todayStr = getTodayStr();
+
+  // Initialize Firebase on mount
+  useEffect(() => {
+    initializeFirebase();
+  }, []);
 
   // Auto-expand today on mount
   useEffect(() => {
