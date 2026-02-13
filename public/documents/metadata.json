@@ -186,6 +186,17 @@
       "tags": ["gohighlevel", "funnels", "automation", "email", "crmlandingpages", "revenue", "implementation"],
       "preview": "Complete GoHighLevel implementation guide: 4 revenue funnels (UGC, $39/$197/$497 spiritual services, Gentleman's Vault pre-launch), 25+ email templates, landing page copy, automation workflows, tag system, SMS sequences, integration points. Step-by-step GHL setup instructions. Everything ready to copy-paste into your GoHighLevel accounts.",
       "links": ["project-ugc-business-plan-2026-02-08", "project-gentlemans-vault", "strategy-services-pricing-2026-02-08"]
+    },
+    {
+      "id": "strategy-ugc-project-management-2026-02-12",
+      "title": "UGC Strategy: Project Management & Operations Software",
+      "path": "projects/UGC-Project-Management-Strategy.md",
+      "folder": "projects",
+      "type": "strategy",
+      "createdAt": "2026-02-12T20:03:00.000Z",
+      "tags": ["ugc", "project-management", "clickup", "monday", "notion", "asana", "brand-partnerships", "revenue", "30-day-plan"],
+      "preview": "Complete UGC strategy for project management software (ClickUp, Monday.com, Notion, Asana, Airtable). 6 Tier 1-2 companies with direct contact info, priority outreach list, email templates, 4 video concepts, 30-day action plan, revenue estimates ($4.8K Month 1), pro tips, tracking sheet. Positioned as GenX business owner scaling 3 income streams. Ready to execute today.",
+      "links": ["project-ugc-business-plan-2026-02-08", "concept-ugc"]
     }
   ],
   "folders": [
@@ -218,6 +229,6 @@
       "description": "Content scripts and templates (videos, posts, etc.)"
     }
   ],
-  "lastUpdated": "2026-02-08T17:40:00.000Z",
-  "totalDocuments": 15
+  "lastUpdated": "2026-02-12T20:03:00.000Z",
+  "totalDocuments": 16
 }
