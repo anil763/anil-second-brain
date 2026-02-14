@@ -317,17 +317,32 @@ export default function HealthPage() {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-8 bg-blue-900/20 border border-blue-700/50 rounded-lg p-6">
-          <h3 className="font-semibold text-lg mb-2">Ready to Start?</h3>
-          <p className="text-slate-300 mb-4">
-            The complete health plan with meal recipes, shopping lists, detailed workout progressions, and tracking sheets is available in the documents.
-          </p>
-          <Link
-            href="/documents"
-            className="inline-block px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg transition font-medium"
-          >
-            View Complete Health Plan
-          </Link>
+        <div className="mt-8 space-y-4">
+          <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-6">
+            <h3 className="font-semibold text-lg mb-2">Ready to Start?</h3>
+            <p className="text-slate-300 mb-4">
+              The complete health plan with meal recipes, shopping lists, detailed workout progressions, and tracking sheets is available in the documents.
+            </p>
+            <Link
+              href="/documents"
+              className="inline-block px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg transition font-medium"
+            >
+              View Complete Health Plan
+            </Link>
+          </div>
+
+          <div className="bg-cyan-900/20 border border-cyan-700/50 rounded-lg p-6">
+            <h3 className="font-semibold text-lg mb-2">✨ Holistic Integration</h3>
+            <p className="text-slate-300 mb-4">
+              Want to combine spiritual practice, natural remedies, breathwork, and grounding with your fitness routine? The Holistic Health Framework integrates everything scientifically and spiritually.
+            </p>
+            <Link
+              href="/documents"
+              className="inline-block px-6 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-lg transition font-medium"
+            >
+              View Holistic Framework
+            </Link>
+          </div>
         </div>
       </main>
     </div>
