@@ -438,6 +438,30 @@
       ],
       "preview": "12,000+ word comprehensive plan: 30-day meal plan (diabetes-friendly, easy recipes), 12-week Total Gym progression, diabetes management guide, daily tracking sheets. Goal: 160 lbs, stable A1C, sustainable results.",
       "links": []
+    },
+    {
+      "id": "health-holistic-framework-2026-02-14",
+      "title": "Holistic Health Framework — Spiritual + Natural + Diabetes Management",
+      "path": "health/HOLISTIC_HEALTH_FRAMEWORK.md",
+      "folder": "health",
+      "type": "framework",
+      "createdAt": "2026-02-14T23:30:00.000Z",
+      "tags": [
+        "health",
+        "holistic",
+        "spiritual",
+        "breathwork",
+        "grounding",
+        "adaptogenic-herbs",
+        "diabetes",
+        "nervous-system",
+        "stress-management",
+        "self-love"
+      ],
+      "preview": "Integrate spiritual practice + natural healing + diabetes management. Daily holistic routine: morning grounding (10 min), breathwork (5 min), adaptogenic herbs, evening journaling (5 min), sleep ritual (15 min). Science-backed practices that directly impact A1C, cortisol, and blood sugar stability through nervous system healing.",
+      "links": [
+        "health-plan-complete-2026-02-14"
+      ]
     }
   ],
   "folders": [
@@ -478,6 +502,6 @@
       "description": "Health, fitness, and diabetes management plans"
     }
   ],
-  "lastUpdated": "2026-02-14T08:27:00.000Z",
-  "totalDocuments": 21
+  "lastUpdated": "2026-02-14T23:30:00.000Z",
+  "totalDocuments": 22
 }
