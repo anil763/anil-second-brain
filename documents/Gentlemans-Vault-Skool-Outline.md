@@ -280,7 +280,7 @@
 - 1 hour: Metrics review + optimization
 - 2 hours: Email (welcome, nurture, announcements)
 
-**Delegated to Nilam:**
+**Delegated to PRISM:**
 - Course filming/editing
 - Email sequence management
 - Resource organization

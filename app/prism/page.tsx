@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { CheckCircle2, Circle, Zap, Calendar, ArrowLeft, Trash2, Plus } from 'lucide-react';
 import Link from 'next/link';
 
-interface NilamTask {
+interface PRISMTask {
   id: string;
   title: string;
   description: string;
@@ -31,15 +31,15 @@ const PRIORITY_CONFIG = {
   low: { label: 'Low', color: 'green' },
 };
 
-export default function NilamDashboard() {
-  const [tasks, setTasks] = useState<NilamTask[]>([]);
+export default function PRISMDashboard() {
+  const [tasks, setTasks] = useState<PRISMTask[]>([]);
   const [filterCategory, setFilterCategory] = useState<string | null>(null);
   const [filterStatus, setFilterStatus] = useState<string | null>(null);
   const [mounted, setMounted] = useState(false);
 
   // Load from localStorage
   useEffect(() => {
-    const saved = localStorage.getItem('nilam-tasks');
+    const saved = localStorage.getItem('prism-tasks');
     if (saved) {
       try {
         const initialTasks = JSON.parse(saved);
@@ -57,12 +57,12 @@ export default function NilamDashboard() {
   // Save to localStorage
   useEffect(() => {
     if (mounted) {
-      localStorage.setItem('nilam-tasks', JSON.stringify(tasks));
+      localStorage.setItem('prism-tasks', JSON.stringify(tasks));
     }
   }, [tasks, mounted]);
 
   function initializeDefaultTasks() {
-    const defaultTasks: NilamTask[] = [
+    const defaultTasks: PRISMTask[] = [
       // UGC Tasks
       {
         id: '1',
@@ -264,10 +264,10 @@ export default function NilamDashboard() {
             </Link>
             <div>
               <h1 className="text-2xl font-bold flex items-center gap-2">
-                <Zap className="w-7 h-7 text-yellow-400" />
-                Nilam's Task Dashboard
+                <Zap className="w-7 h-7 text-cyan-400" />
+                PRISM's Autonomous Tasks
               </h1>
-              <p className="text-slate-400 text-sm">Tasks I'm completing to move you toward $1K/month</p>
+              <p className="text-slate-400 text-sm">Building toward $1K/month by March 8, 2026</p>
             </div>
           </div>
         </div>
@@ -405,7 +405,7 @@ export default function NilamDashboard() {
 
         <footer className="mt-12 pt-6 border-t border-slate-800 text-sm text-slate-500">
           <p>*Est. Value based on $50 per task completion toward revenue goals</p>
-          <p className="mt-2">I'm working on these tasks continuously. Check back daily for progress updates.</p>
+          <p className="mt-2">I'm working autonomously on these tasks 24/7. Check back daily for progress updates.</p>
         </footer>
       </main>
     </div>
