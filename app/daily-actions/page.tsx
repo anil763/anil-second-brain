@@ -188,7 +188,7 @@ export default function DailyActionsPage() {
 
   const todaysTarget = actions
     .filter((a) => a[today as keyof typeof a] !== undefined)
-    .reduce((sum, a) => sum + (a[today as keyof typeof a] || 0), 0);
+    .reduce((sum, a) => sum + ((a[today as keyof typeof a] as number) || 0), 0);
 
   const todaysCompleted = actions.filter((a) => a.completed > 0).length;
   const completionPercent = (todaysCompleted / actions.length) * 100;
@@ -381,7 +381,7 @@ export default function DailyActionsPage() {
             {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => {
               const dayTotal = actions
                 .filter((a) => a[day as keyof typeof a] !== undefined)
-                .reduce((sum, a) => sum + (a[day as keyof typeof a] || 0), 0);
+                .reduce((sum, a) => sum + ((a[day as keyof typeof a] as number) || 0), 0);
               const isToday = day === today;
 
               return (
