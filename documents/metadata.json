@@ -418,6 +418,26 @@
       "links": [
         "nightly-revenue-tracker-2026-02-13"
       ]
+    },
+    {
+      "id": "health-plan-complete-2026-02-14",
+      "title": "Complete Health & Fitness Plan (Goal: 160 lbs)",
+      "path": "health/HEALTH_PLAN_Complete.md",
+      "folder": "health",
+      "type": "plan",
+      "createdAt": "2026-02-14T08:27:00.000Z",
+      "tags": [
+        "health",
+        "fitness",
+        "diabetes",
+        "meal-plan",
+        "workout",
+        "total-gym",
+        "weight-loss",
+        "a1c-management"
+      ],
+      "preview": "12,000+ word comprehensive plan: 30-day meal plan (diabetes-friendly, easy recipes), 12-week Total Gym progression, diabetes management guide, daily tracking sheets. Goal: 160 lbs, stable A1C, sustainable results.",
+      "links": []
     }
   ],
   "folders": [
@@ -452,8 +472,12 @@
     {
       "name": "nightly-work",
       "description": "Nightly autonomous builds (revenue tracking, systems, strategy, etc.)"
+    },
+    {
+      "name": "health",
+      "description": "Health, fitness, and diabetes management plans"
     }
   ],
-  "lastUpdated": "2026-02-13T23:01:00.000Z",
-  "totalDocuments": 20
+  "lastUpdated": "2026-02-14T08:27:00.000Z",
+  "totalDocuments": 21
 }
