@@ -462,6 +462,50 @@
       "links": [
         "health-plan-complete-2026-02-14"
       ]
+    },
+    {
+      "id": "service-readings-funnel-2026-02-14",
+      "title": "Readings Funnel Optimization — $500 → $2K/Month",
+      "path": "services/READINGS_FUNNEL_OPTIMIZATION.md",
+      "folder": "services",
+      "type": "strategy",
+      "createdAt": "2026-02-14T23:45:00.000Z",
+      "tags": [
+        "readings",
+        "funnel",
+        "conversion",
+        "email-marketing",
+        "lead-magnet",
+        "revenue-scaling",
+        "4-week-plan",
+        "numerology"
+      ],
+      "preview": "4-week strategy to scale numerology readings from $500 to $2,000/month. Phase 1: Audit (where are current 5 bookings coming from?). Phase 2: Build lead magnet + email sequence. Phase 3: Conversion mechanics (pricing, urgency, friction). Phase 4: Traffic sources (email, blog, social, Vault warm list). Includes full email templates, pricing tiers, weekly tracking, and measurable KPIs.",
+      "links": [
+        "strategy-services-pricing-2026-02-08"
+      ]
+    },
+    {
+      "id": "project-vault-prelaunch-2026-02-14",
+      "title": "Gentleman's Vault Pre-Launch Playbook — 28 Days to $2.5K/Month",
+      "path": "projects/VAULT_PRELAUNCH_PLAYBOOK.md",
+      "folder": "projects",
+      "type": "playbook",
+      "createdAt": "2026-02-14T23:50:00.000Z",
+      "tags": [
+        "vault",
+        "launch",
+        "prelaunch",
+        "warm-list",
+        "community",
+        "28-day-sprint",
+        "revenue",
+        "execution"
+      ],
+      "preview": "Complete 28-day pre-launch playbook for Gentleman's Vault (March 1 launch). Week 1: Warm list (150-200 names). Week 2: Landing page, welcome video, 5-email sequence. Week 3: Launch day + 48-hour window ($44 founding rate). Week 4+: Post-launch delivery + upsell to Tier 2 ($297). Target: 50-60 founding members = $2,500+/month recurring. Includes all email templates, video scripts, FAQ, and post-launch strategy.",
+      "links": [
+        "project-gentlemans-vault"
+      ]
     }
   ],
   "folders": [
@@ -502,6 +546,6 @@
       "description": "Health, fitness, and diabetes management plans"
     }
   ],
-  "lastUpdated": "2026-02-14T23:30:00.000Z",
-  "totalDocuments": 22
+  "lastUpdated": "2026-02-14T23:55:00.000Z",
+  "totalDocuments": 24
 }

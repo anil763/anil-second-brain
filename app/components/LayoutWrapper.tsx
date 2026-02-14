@@ -6,7 +6,7 @@ import { Menu, X, FileText, Folder, Home, Building2, CheckSquare, HardDrive, Zap
 
 const navigationItems = [
   { href: '/dashboard-10k', label: '🎯 $10K Mission', icon: Home },
-  { href: '/prism', label: '🔮 PRISM\'s Tasks', icon: Zap },
+  { href: '/daily-actions', label: '⚡ Daily Actions', icon: Zap },
   { href: '/health', label: '❤️ Health', icon: Heart },
   { href: '/memory', label: '💾 Memory Bank', icon: HardDrive },
   { href: '/documents', label: 'Browse Documents', icon: FileText },
