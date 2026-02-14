@@ -1,0 +1,166 @@
+{
+  "revenueTracker": {
+    "campaignName": "30-Day Freedom Mission",
+    "startDate": "2026-02-13",
+    "endDate": "2026-03-08",
+    "goalAmount": 1000,
+    "goalLabel": "$1K/month by March 8",
+    "incomeStreams": [
+      {
+        "name": "UGC Creator",
+        "id": "ugc",
+        "target30Day": 600,
+        "targetMidYear": 12500,
+        "description": "GenX content via Bento Backstage",
+        "metrics": {
+          "videosPerWeek": 5,
+          "revenuePerVideo": 100,
+          "avgResponseRate": 0.07
+        }
+      },
+      {
+        "name": "Numerology Daily Content",
+        "id": "numerology",
+        "target30Day": 300,
+        "targetMidYear": 7500,
+        "description": "Daily posts → paid readings ($97-497)",
+        "metrics": {
+          "postsPerWeek": 28,
+          "conversionRate": 0.015,
+          "avgReadingPrice": 250
+        }
+      },
+      {
+        "name": "Gentleman's Vault",
+        "id": "vault",
+        "target30Day": 100,
+        "targetMidYear": 10000,
+        "description": "Community + coaching ($97/$297/$497 tiers)",
+        "metrics": {
+          "launchDate": "2026-02-20",
+          "tiers": [97, 297, 497],
+          "targetMembers30Day": 1
+        }
+      }
+    ],
+    "dailyLog": [
+      {
+        "date": "2026-02-13",
+        "revenue": {
+          "ugc": 0,
+          "numerology": 0,
+          "vault": 0,
+          "total": 0
+        },
+        "actions": {
+          "videosFilmed": 0,
+          "emailsSent": 0,
+          "contentPosts": 0,
+          "readingsBooked": 0,
+          "vaultSignups": 0
+        },
+        "cumulativeRevenue": 0,
+        "onTrack": true,
+        "notes": "Baseline tracking started"
+      }
+    ],
+    "weeklySnapshots": [
+      {
+        "week": 1,
+        "startDate": "2026-02-13",
+        "endDate": "2026-02-19",
+        "target": 250,
+        "actual": 0,
+        "breakdown": {
+          "ugc": 0,
+          "numerology": 0,
+          "vault": 0
+        },
+        "assessment": "Pending",
+        "nextWeekAdjustments": []
+      },
+      {
+        "week": 2,
+        "startDate": "2026-02-20",
+        "endDate": "2026-02-26",
+        "target": 250,
+        "actual": 0,
+        "breakdown": {
+          "ugc": 0,
+          "numerology": 0,
+          "vault": 0
+        },
+        "assessment": "Pending",
+        "nextWeekAdjustments": []
+      },
+      {
+        "week": 3,
+        "startDate": "2026-02-27",
+        "endDate": "2026-03-05",
+        "target": 250,
+        "actual": 0,
+        "breakdown": {
+          "ugc": 0,
+          "numerology": 0,
+          "vault": 0
+        },
+        "assessment": "Pending",
+        "nextWeekAdjustments": []
+      },
+      {
+        "week": 4,
+        "startDate": "2026-03-06",
+        "endDate": "2026-03-08",
+        "target": 250,
+        "actual": 0,
+        "breakdown": {
+          "ugc": 0,
+          "numerology": 0,
+          "vault": 0
+        },
+        "assessment": "Pending",
+        "nextWeekAdjustments": []
+      }
+    ],
+    "milestones": [
+      {
+        "amount": 100,
+        "label": "First customers found you. You're real.",
+        "daysIn": 2
+      },
+      {
+        "amount": 250,
+        "label": "Patterns emerging. You're learning what works.",
+        "daysIn": 6
+      },
+      {
+        "amount": 500,
+        "label": "Halfway. Momentum is real. Scale it.",
+        "daysIn": 12
+      },
+      {
+        "amount": 750,
+        "label": "Nearly there. Final push. You've got this.",
+        "daysIn": 18
+      },
+      {
+        "amount": 1000,
+        "label": "FREEDOM MISSION PHASE 1 COMPLETE. 🎉",
+        "daysIn": 24
+      }
+    ],
+    "keyMetrics": {
+      "dailyAverageNeeded": 41.67,
+      "conversionTargets": {
+        "ugcEmailResponseRate": 0.07,
+        "numerologyReaderConversion": 0.015,
+        "vaultOnboarding": 0.8
+      },
+      "contentVelocity": {
+        "ugcVideosPerWeek": 5,
+        "numerologyPostsPerWeek": 28,
+        "emailsPerWeek": 140
+      }
+    }
+  }
+}
