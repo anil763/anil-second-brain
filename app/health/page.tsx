@@ -3,8 +3,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Heart, TrendingDown, Zap, Apple, Dumbbell, AlertCircle } from 'lucide-react';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 
 export default function HealthPage() {
   const [activeTab, setActiveTab] = useState<'overview' | 'meal-plan' | 'workouts' | 'tracking'>('overview');

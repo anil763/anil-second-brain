@@ -7,9 +7,17 @@
       "folder": "concepts",
       "type": "concept",
       "createdAt": "2026-02-07T23:00:00.000Z",
-      "tags": ["models", "optimization", "cost", "strategy"],
+      "tags": [
+        "models",
+        "optimization",
+        "cost",
+        "strategy"
+      ],
       "preview": "Tiered approach to choosing AI models by cost and capability. Kimi first, Haiku default, Sonnet for complex reasoning.",
-      "links": ["rate-limits-and-budget", "cache-hit-strategy"]
+      "links": [
+        "rate-limits-and-budget",
+        "cache-hit-strategy"
+      ]
     },
     {
       "id": "concept-rate-limits",
@@ -18,9 +26,17 @@
       "folder": "concepts",
       "type": "concept",
       "createdAt": "2026-02-07T23:00:00.000Z",
-      "tags": ["budget", "rate-limits", "optimization", "constraints"],
+      "tags": [
+        "budget",
+        "rate-limits",
+        "optimization",
+        "constraints"
+      ],
       "preview": "Hard constraints: $5 daily, $200 monthly. 5s between API calls, 10s between searches. Batch work to stay under budget.",
-      "links": ["model-selection-strategy", "cache-hit-strategy"]
+      "links": [
+        "model-selection-strategy",
+        "cache-hit-strategy"
+      ]
     },
     {
       "id": "concept-cache-strategy",
@@ -29,9 +45,17 @@
       "folder": "concepts",
       "type": "concept",
       "createdAt": "2026-02-07T23:00:00.000Z",
-      "tags": ["cache", "optimization", "efficiency", "batching"],
+      "tags": [
+        "cache",
+        "optimization",
+        "efficiency",
+        "batching"
+      ],
       "preview": "Maximize LLM cache efficiency: batch requests in 5-min windows, keep system prompts stable, organize context hierarchically.",
-      "links": ["model-selection-strategy", "rate-limits-and-budget"]
+      "links": [
+        "model-selection-strategy",
+        "rate-limits-and-budget"
+      ]
     },
     {
       "id": "decision-anil-origin",
@@ -40,9 +64,18 @@
       "folder": "decisions",
       "type": "decision",
       "createdAt": "2026-02-07T23:00:00.000Z",
-      "tags": ["origin", "spiritual-awakening", "mission", "transformation", "freedom"],
+      "tags": [
+        "origin",
+        "spiritual-awakening",
+        "mission",
+        "transformation",
+        "freedom"
+      ],
       "preview": "From childhood trauma through spiritual awakening. The story that frames everything: pain to purpose, self-abandonment to self-love.",
-      "links": ["numerology-daily-energy", "ugc-content-playbook"]
+      "links": [
+        "numerology-daily-energy",
+        "ugc-content-playbook"
+      ]
     },
     {
       "id": "concept-numerology",
@@ -51,9 +84,18 @@
       "folder": "concepts",
       "type": "concept",
       "createdAt": "2026-02-07T23:00:00.000Z",
-      "tags": ["numerology", "content-creation", "spiritual-business", "daily-routine", "revenue"],
+      "tags": [
+        "numerology",
+        "content-creation",
+        "spiritual-business",
+        "daily-routine",
+        "revenue"
+      ],
       "preview": "Daily numerology readings across 4 platforms. Build spiritual authority, grow audience, generate leads for $97-497 readings.",
-      "links": ["anil-origin", "ugc-content-playbook"]
+      "links": [
+        "anil-origin",
+        "ugc-content-playbook"
+      ]
     },
     {
       "id": "concept-ugc",
@@ -62,9 +104,18 @@
       "folder": "concepts",
       "type": "concept",
       "createdAt": "2026-02-07T23:00:00.000Z",
-      "tags": ["ugc", "genx", "content-creation", "revenue", "brand-partnerships"],
+      "tags": [
+        "ugc",
+        "genx",
+        "content-creation",
+        "revenue",
+        "brand-partnerships"
+      ],
       "preview": "GenX angle on apps, fintech, tech. 5-7 videos/week via Bento Backstage. Target: $1K in 30 days, $30K by mid-year.",
-      "links": ["anil-origin", "numerology-daily-energy"]
+      "links": [
+        "anil-origin",
+        "numerology-daily-energy"
+      ]
     },
     {
       "id": "project-gentlemans-vault",
@@ -73,9 +124,19 @@
       "folder": "projects",
       "type": "project",
       "createdAt": "2026-02-08T01:30:00.000Z",
-      "tags": ["gentlemans-vault", "business-plan", "skool", "membership", "revenue", "execution"],
+      "tags": [
+        "gentlemans-vault",
+        "business-plan",
+        "skool",
+        "membership",
+        "revenue",
+        "execution"
+      ],
       "preview": "12-part comprehensive blueprint: market analysis, pricing ($97-$497/mo), Skool setup, 5 content pillars, month-by-month roadmap, marketing funnel, financials, KPIs. Target: $10K+/mo by Month 6.",
-      "links": ["anil-origin", "numerology-daily-energy"]
+      "links": [
+        "anil-origin",
+        "numerology-daily-energy"
+      ]
     },
     {
       "id": "daily-2026-02-07",
@@ -84,9 +145,20 @@
       "folder": "daily-journal",
       "type": "journal",
       "createdAt": "2026-02-07T23:51:00.000Z",
-      "tags": ["daily", "setup", "models", "cache", "second-brain-launch", "telegram", "wordpress"],
+      "tags": [
+        "daily",
+        "setup",
+        "models",
+        "cache",
+        "second-brain-launch",
+        "telegram",
+        "wordpress"
+      ],
       "preview": "Configured OpenClaw, established model selection strategy, planned Second Brain project, captured Anil's origin story. Connected Telegram. Installed WordPress skill.",
-      "links": ["anil-origin", "project-gentlemans-vault"]
+      "links": [
+        "anil-origin",
+        "project-gentlemans-vault"
+      ]
     },
     {
       "id": "analysis-competitive-2026-02-08",
@@ -95,9 +167,19 @@
       "folder": "overnight-prs",
       "type": "analysis",
       "createdAt": "2026-02-08T12:38:00.000Z",
-      "tags": ["gentlemans-vault", "competitive-analysis", "market-research", "strategy", "positioning", "pricing"],
+      "tags": [
+        "gentlemans-vault",
+        "competitive-analysis",
+        "market-research",
+        "strategy",
+        "positioning",
+        "pricing"
+      ],
       "preview": "Comprehensive competitive intelligence: 9 direct competitors analyzed (EVRYMAN, ManKind Project, 4biddenknowledge, etc.), market opportunity matrix, 3 differentiation strategies, pricing comparison, 8 marketing channels for GenX men, 5 unique selling propositions. Identifies the perfect market gap for spiritual + practical + brotherhood positioning.",
-      "links": ["project-gentlemans-vault", "anil-origin"]
+      "links": [
+        "project-gentlemans-vault",
+        "anil-origin"
+      ]
     },
     {
       "id": "asset-video-scripts-2026-02-08",
@@ -106,9 +188,20 @@
       "folder": "business-plans",
       "type": "asset",
       "createdAt": "2026-02-08T13:54:00.000Z",
-      "tags": ["gentlemans-vault", "video-scripts", "content-creation", "marketing", "launch", "sales", "education"],
+      "tags": [
+        "gentlemans-vault",
+        "video-scripts",
+        "content-creation",
+        "marketing",
+        "launch",
+        "sales",
+        "education"
+      ],
       "preview": "Complete production-ready video script library: 25 scripts across 5 categories (Launch, Sales, Educational, Community, Evergreen). Each script includes hook, body, CTA, and platform notes. Ready for immediate filming with status tracker.",
-      "links": ["project-gentlemans-vault", "analysis-competitive-2026-02-08"]
+      "links": [
+        "project-gentlemans-vault",
+        "analysis-competitive-2026-02-08"
+      ]
     },
     {
       "id": "strategy-services-pricing-2026-02-08",
@@ -117,9 +210,20 @@
       "folder": "services",
       "type": "strategy",
       "createdAt": "2026-02-08T14:10:00.000Z",
-      "tags": ["services", "pricing", "strategy", "coaching", "transformation", "revenue", "positioning"],
+      "tags": [
+        "services",
+        "pricing",
+        "strategy",
+        "coaching",
+        "transformation",
+        "revenue",
+        "positioning"
+      ],
       "preview": "Complete overhaul of service offerings and pricing. 4-tier architecture ($97-$5,000): Quick Read, Full Chart + Coaching, Deep Dive Coaching, Premium Freedom Blueprint. 6 new service ideas (Corporate Escape Coaching, Business Birth Chart, Partner Reading, Monthly Program, Group Workshop, Year Numbers). Premium positioning strategy with sales copy samples and implementation roadmap. Potential: $11K+/month.",
-      "links": ["anil-origin", "project-gentlemans-vault"]
+      "links": [
+        "anil-origin",
+        "project-gentlemans-vault"
+      ]
     },
     {
       "id": "project-ugc-business-plan-2026-02-08",
@@ -128,9 +232,20 @@
       "folder": "projects",
       "type": "project",
       "createdAt": "2026-02-08T15:40:00.000Z",
-      "tags": ["ugc", "business-plan", "revenue", "content-creation", "lead-generation", "fintech", "productivity"],
+      "tags": [
+        "ugc",
+        "business-plan",
+        "revenue",
+        "content-creation",
+        "lead-generation",
+        "fintech",
+        "productivity"
+      ],
       "preview": "Comprehensive UGC business plan: market analysis, 5 niche breakdown (FinTech $10-15K, Productivity $6-12K, Health $5K, Coaching $5-8K, AI $8-10K), 50+ brand targets, daily workflow, 4 email templates, competitive analysis, revenue projections Month 1-6 ($1K → $20K+). Differentiation: GenX authenticity, niche mastery, 48-72hr turnaround.",
-      "links": ["concept-ugc", "anil-origin"]
+      "links": [
+        "concept-ugc",
+        "anil-origin"
+      ]
     },
     {
       "id": "content-spiritual-videos-2026-02-08",
@@ -139,9 +254,18 @@
       "folder": "content",
       "type": "asset",
       "createdAt": "2026-02-08T16:15:00.000Z",
-      "tags": ["spiritual", "video-scripts", "content-creation", "healing", "awakening", "daily-content"],
+      "tags": [
+        "spiritual",
+        "video-scripts",
+        "content-creation",
+        "healing",
+        "awakening",
+        "daily-content"
+      ],
       "preview": "5 daily spiritual video scripts based on Anil's awakening journey: (1) I Was That Suicidal Kid, (2) The Day I Chose Myself, (3) Your Heart Knows What Your Mind Won't Admit, (4) I Was Meant for This, (5) Safe to Be Loved. Each includes 2-2.5min script, hook, story, takeaway action, CTA. Ready to batch-film today.",
-      "links": ["decision-anil-origin"]
+      "links": [
+        "decision-anil-origin"
+      ]
     },
     {
       "id": "content-numerology-cta-scripts-2026-02-08",
@@ -150,9 +274,20 @@
       "folder": "content",
       "type": "playbook",
       "createdAt": "2026-02-08T16:28:00.000Z",
-      "tags": ["numerology", "cta", "conversion", "revenue", "scripts", "engagement", "lead-gen"],
+      "tags": [
+        "numerology",
+        "cta",
+        "conversion",
+        "revenue",
+        "scripts",
+        "engagement",
+        "lead-gen"
+      ],
       "preview": "Complete CTA scripts for daily numerology videos: 5 pinned comment templates + 5 verbal scripts + rotation strategy. Proven messaging to convert viewers to $97 readings. Includes tracking UTM links and expected revenue projections. Use one per week, rotate for freshness and testing.",
-      "links": ["concept-numerology", "strategy-services-pricing-2026-02-08"]
+      "links": [
+        "concept-numerology",
+        "strategy-services-pricing-2026-02-08"
+      ]
     },
     {
       "id": "strategy-fiverr-ugc-profile-2026-02-08",
@@ -161,9 +296,20 @@
       "folder": "projects",
       "type": "strategy",
       "createdAt": "2026-02-08T16:58:00.000Z",
-      "tags": ["fiverr", "ugc", "profile", "pricing", "strategy", "freelance", "revenue"],
+      "tags": [
+        "fiverr",
+        "ugc",
+        "profile",
+        "pricing",
+        "strategy",
+        "freelance",
+        "revenue"
+      ],
       "preview": "Complete Fiverr profile setup: 3-tier pricing (Basic $65, Standard $175, Premium $450), SEO-optimized headlines and descriptions, 10 sections covering niche positioning, client messaging, launch strategy, FAQ templates. Copy-paste ready for immediate profile setup. Target: 5-10 orders Month 1, Level 1 seller within 60 days.",
-      "links": ["project-ugc-business-plan-2026-02-08", "concept-ugc"]
+      "links": [
+        "project-ugc-business-plan-2026-02-08",
+        "concept-ugc"
+      ]
     },
     {
       "id": "roadmap-launch-march-1-2026-02-08",
@@ -172,9 +318,21 @@
       "folder": "projects",
       "type": "roadmap",
       "createdAt": "2026-02-08T17:40:00.000Z",
-      "tags": ["gentlemans-vault", "launch", "roadmap", "execution", "skool", "march-2026", "day-by-day"],
+      "tags": [
+        "gentlemans-vault",
+        "launch",
+        "roadmap",
+        "execution",
+        "skool",
+        "march-2026",
+        "day-by-day"
+      ],
       "preview": "Complete 21-day launch roadmap: Week 1 (Feb 9-15) Skool setup, Week 2 (Feb 16-22) content creation & pre-launch, Week 3 (Feb 23-Mar 1) launch push. Day-by-day tasks, master checklists by category (Skool, landing page, email, content, community, launch strategy), success metrics, email templates, social content calendar. The definitive guide to launching on March 1.",
-      "links": ["project-gentlemans-vault", "asset-video-scripts-2026-02-08", "analysis-competitive-2026-02-08"]
+      "links": [
+        "project-gentlemans-vault",
+        "asset-video-scripts-2026-02-08",
+        "analysis-competitive-2026-02-08"
+      ]
     },
     {
       "id": "strategy-gohighlevel-complete-2026-02-08",
@@ -183,9 +341,21 @@
       "folder": "projects",
       "type": "strategy",
       "createdAt": "2026-02-08T18:01:00.000Z",
-      "tags": ["gohighlevel", "funnels", "automation", "email", "crmlandingpages", "revenue", "implementation"],
+      "tags": [
+        "gohighlevel",
+        "funnels",
+        "automation",
+        "email",
+        "crmlandingpages",
+        "revenue",
+        "implementation"
+      ],
       "preview": "Complete GoHighLevel implementation guide: 4 revenue funnels (UGC, $39/$197/$497 spiritual services, Gentleman's Vault pre-launch), 25+ email templates, landing page copy, automation workflows, tag system, SMS sequences, integration points. Step-by-step GHL setup instructions. Everything ready to copy-paste into your GoHighLevel accounts.",
-      "links": ["project-ugc-business-plan-2026-02-08", "project-gentlemans-vault", "strategy-services-pricing-2026-02-08"]
+      "links": [
+        "project-ugc-business-plan-2026-02-08",
+        "project-gentlemans-vault",
+        "strategy-services-pricing-2026-02-08"
+      ]
     },
     {
       "id": "strategy-ugc-project-management-2026-02-12",
@@ -194,9 +364,104 @@
       "folder": "projects",
       "type": "strategy",
       "createdAt": "2026-02-12T20:03:00.000Z",
-      "tags": ["ugc", "project-management", "clickup", "monday", "notion", "asana", "brand-partnerships", "revenue", "30-day-plan"],
+      "tags": [
+        "ugc",
+        "project-management",
+        "clickup",
+        "monday",
+        "notion",
+        "asana",
+        "brand-partnerships",
+        "revenue",
+        "30-day-plan"
+      ],
       "preview": "Complete UGC strategy for project management software (ClickUp, Monday.com, Notion, Asana, Airtable). 6 Tier 1-2 companies with direct contact info, priority outreach list, email templates, 4 video concepts, 30-day action plan, revenue estimates ($4.8K Month 1), pro tips, tracking sheet. Positioned as GenX business owner scaling 3 income streams. Ready to execute today.",
-      "links": ["project-ugc-business-plan-2026-02-08", "concept-ugc"]
+      "links": [
+        "project-ugc-business-plan-2026-02-08",
+        "concept-ugc"
+      ]
+    },
+    {
+      "id": "nightly-revenue-tracker-2026-02-13",
+      "title": "30-Day Revenue Tracking System",
+      "path": "nightly-work/REVENUE_TRACKER_30DAY.md",
+      "folder": "nightly-work",
+      "type": "system",
+      "createdAt": "2026-02-13T23:00:00.000Z",
+      "tags": [
+        "revenue-tracking",
+        "metrics",
+        "business-operations",
+        "30-day-goal",
+        "automation",
+        "monitoring"
+      ],
+      "preview": "Complete 30-day revenue tracking framework with daily log, weekly snapshots, checkpoints at $291, $583, $833, $1K. Auto-calculating progress toward March 8 deadline. Decision framework for allocating time across 3 income streams.",
+      "links": []
+    },
+    {
+      "id": "nightly-sheets-setup-2026-02-13",
+      "title": "Revenue Tracker — Google Sheets Setup",
+      "path": "nightly-work/REVENUE_TRACKER_SHEETS_SETUP.md",
+      "folder": "nightly-work",
+      "type": "guide",
+      "createdAt": "2026-02-13T23:01:00.000Z",
+      "tags": [
+        "google-sheets",
+        "revenue-tracking",
+        "automation",
+        "setup",
+        "templates",
+        "formulas"
+      ],
+      "preview": "Complete Google Sheets setup guide with 6 tabs (Daily Log, Weekly Summary, Dashboard, Brand Tracking, Numerology Readers, Vault Members). Copy-paste ready formulas, conditional formatting, 2-min daily workflow.",
+      "links": [
+        "nightly-revenue-tracker-2026-02-13"
+      ]
+    },
+    {
+      "id": "health-plan-complete-2026-02-14",
+      "title": "Complete Health & Fitness Plan (Goal: 160 lbs)",
+      "path": "health/HEALTH_PLAN_Complete.md",
+      "folder": "health",
+      "type": "plan",
+      "createdAt": "2026-02-14T08:27:00.000Z",
+      "tags": [
+        "health",
+        "fitness",
+        "diabetes",
+        "meal-plan",
+        "workout",
+        "total-gym",
+        "weight-loss",
+        "a1c-management"
+      ],
+      "preview": "12,000+ word comprehensive plan: 30-day meal plan (diabetes-friendly, easy recipes), 12-week Total Gym progression, diabetes management guide, daily tracking sheets. Goal: 160 lbs, stable A1C, sustainable results.",
+      "links": []
+    },
+    {
+      "id": "health-holistic-framework-2026-02-14",
+      "title": "Holistic Health Framework — Spiritual + Natural + Diabetes Management",
+      "path": "health/HOLISTIC_HEALTH_FRAMEWORK.md",
+      "folder": "health",
+      "type": "framework",
+      "createdAt": "2026-02-14T23:30:00.000Z",
+      "tags": [
+        "health",
+        "holistic",
+        "spiritual",
+        "breathwork",
+        "grounding",
+        "adaptogenic-herbs",
+        "diabetes",
+        "nervous-system",
+        "stress-management",
+        "self-love"
+      ],
+      "preview": "Integrate spiritual practice + natural healing + diabetes management. Daily holistic routine: morning grounding (10 min), breathwork (5 min), adaptogenic herbs, evening journaling (5 min), sleep ritual (15 min). Science-backed practices that directly impact A1C, cortisol, and blood sugar stability through nervous system healing.",
+      "links": [
+        "health-plan-complete-2026-02-14"
+      ]
     }
   ],
   "folders": [
@@ -227,8 +492,16 @@
     {
       "name": "content",
       "description": "Content scripts and templates (videos, posts, etc.)"
+    },
+    {
+      "name": "nightly-work",
+      "description": "Nightly autonomous builds (revenue tracking, systems, strategy, etc.)"
+    },
+    {
+      "name": "health",
+      "description": "Health, fitness, and diabetes management plans"
     }
   ],
-  "lastUpdated": "2026-02-12T20:03:00.000Z",
-  "totalDocuments": 16
+  "lastUpdated": "2026-02-14T23:30:00.000Z",
+  "totalDocuments": 22
 }
