@@ -506,6 +506,31 @@
       "links": [
         "project-gentlemans-vault"
       ]
+    },
+    {
+      "id": "project-ugc-business-plan-complete-2026-02-14",
+      "title": "UGC Business Plan — $500 → $30K/Month (ANIL CREATES LLC)",
+      "path": "projects/UGC_BUSINESS_PLAN_COMPLETE.md",
+      "folder": "projects",
+      "type": "business-plan",
+      "createdAt": "2026-02-14T23:55:00.000Z",
+      "tags": [
+        "ugc",
+        "business-plan",
+        "cold-email",
+        "saas",
+        "fintech",
+        "genx",
+        "b2b",
+        "pricing",
+        "30-day-plan",
+        "revenue-roadmap"
+      ],
+      "preview": "Complete UGC business plan for ANIL CREATES LLC. Tier 1 verticals: SaaS, Fintech, AI Tools, Online Education. Pricing: $250-350 single videos, $750-1K bundles, $2-3K/mo retainers. Client acquisition: Cold email (primary, 50-75/week), Backstage, Fiverr, LinkedIn. 30-day target: $3K revenue (1 retainer + projects). 365-day goal: $30K/month (8-10 retainers). Includes cold email templates, 4-week action plan, weekly tracking metrics, revenue roadmap.",
+      "links": [
+        "strategy-ugc-project-management-2026-02-12",
+        "project-ugc-business-plan-2026-02-08"
+      ]
     }
   ],
   "folders": [
@@ -546,6 +571,6 @@
       "description": "Health, fitness, and diabetes management plans"
     }
   ],
-  "lastUpdated": "2026-02-14T23:55:00.000Z",
-  "totalDocuments": 24
+  "lastUpdated": "2026-02-15T00:15:00.000Z",
+  "totalDocuments": 25
 }
