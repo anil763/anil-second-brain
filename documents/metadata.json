@@ -531,6 +531,30 @@
         "strategy-ugc-project-management-2026-02-12",
         "project-ugc-business-plan-2026-02-08"
       ]
+    },
+    {
+      "id": "nightly-nexus-code-strategy-2026-02-15",
+      "title": "NEXUS CODE Program Strategy — 3-Tier Spiritual Coaching ($97-$497/mo)",
+      "path": "nightly-work/NEXUS_CODE_Program_Strategy.md",
+      "folder": "nightly-work",
+      "type": "business-plan",
+      "createdAt": "2026-02-15T03:00:00.000Z",
+      "tags": [
+        "nexus-code",
+        "spiritual-coaching",
+        "program-strategy",
+        "pricing",
+        "funnel",
+        "revenue",
+        "fourth-income-stream",
+        "entrepreneurship",
+        "numerology"
+      ],
+      "preview": "4th income stream: NEXUS CODE spiritual coaching program. 3-tier architecture: $97 reading, $297 group blueprint coaching, $497/month mastery mentorship. Target: GenX entrepreneurs escaping corporate. Revenue model: $1.8K Month 1 → $12.8K Month 6 (~$154K/year run rate). Includes target avatar, sales page copy, 5-email launch sequence, 30-day timeline, competitor positioning, marketing channels (TikTok + LinkedIn + email). Next: Build free quiz entry point.",
+      "links": [
+        "strategy-services-pricing-2026-02-08",
+        "project-gentlemans-vault"
+      ]
     }
   ],
   "folders": [
@@ -571,6 +595,6 @@
       "description": "Health, fitness, and diabetes management plans"
     }
   ],
-  "lastUpdated": "2026-02-15T00:15:00.000Z",
-  "totalDocuments": 25
+  "lastUpdated": "2026-02-15T03:15:00.000Z",
+  "totalDocuments": 26
 }
