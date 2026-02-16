@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import LiveAgentStatus from '../components/LiveAgentStatus';
 
 interface Agent {
   id: string;
@@ -246,51 +247,8 @@ export default function MissionControl() {
 
         {/* Content */}
         <div className="flex-1 overflow-y-auto">
-          {/* Crons Table */}
           <div className="p-6">
-            <div className="space-y-3 mb-6">
-              <div className="flex gap-2 text-xs">
-                <span className="text-yellow-400">🟠 4 agents overdue</span>
-                <span className="text-slate-500">•</span>
-                <span className="text-slate-400">2 high-priority decisions</span>
-              </div>
-            </div>
-
-            <div className="bg-slate-800/30 rounded-lg border border-slate-700 overflow-hidden">
-              <div className="grid grid-cols-5 gap-4 p-4 bg-slate-900/50 border-b border-slate-700 text-xs font-semibold text-slate-400 uppercase tracking-wider">
-                <div>Status</div>
-                <div>Job</div>
-                <div>Schedule</div>
-                <div>Last Run</div>
-                <div>Next</div>
-              </div>
-
-              {crons.map((cron, idx) => (
-                <div
-                  key={idx}
-                  className="grid grid-cols-5 gap-4 p-4 border-b border-slate-700/50 items-center text-sm hover:bg-slate-800/20 transition-colors"
-                >
-                  <div>
-                    <span
-                      className={`inline-block w-2 h-2 rounded-full ${
-                        cron.status === 'ok'
-                          ? 'bg-green-500'
-                          : cron.status === 'late'
-                          ? 'bg-yellow-500'
-                          : 'bg-red-500'
-                      }`}
-                    />
-                    <span className="ml-2 text-xs uppercase">
-                      {cron.status === 'ok' ? 'OK' : cron.status === 'late' ? 'LATE' : 'ERROR'}
-                    </span>
-                  </div>
-                  <div className="font-medium">{cron.job}</div>
-                  <div className="font-mono text-xs text-slate-400">{cron.schedule}</div>
-                  <div className="text-slate-400">{cron.lastRun}</div>
-                  <div className="text-slate-400">{cron.next}</div>
-                </div>
-              ))}
-            </div>
+            <LiveAgentStatus />
           </div>
         </div>
       </div>
