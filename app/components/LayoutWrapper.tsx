@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Menu, X, FileText, Folder, Home, Building2, CheckSquare, HardDrive, Zap, Heart } from 'lucide-react';
 
 const navigationItems = [
+  { href: '/mission-control', label: '🤖 Mission Control', icon: Home },
   { href: '/dashboard-10k', label: '🎯 $10K Mission', icon: Home },
   { href: '/daily-actions', label: '⚡ Daily Actions', icon: Zap },
   { href: '/ugc-execution', label: '🎬 UGC Execution', icon: FileText },
