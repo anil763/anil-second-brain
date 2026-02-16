@@ -88,6 +88,32 @@ export default function MissionControl() {
         lastDocument: 'cloud-msp-landscape-2026-02-16.md',
         discordChannel: 'managed-services',
       },
+      {
+        id: 'memory_bank_agent',
+        name: 'Memory Bank Agent',
+        emoji: '🧠',
+        schedule: 'webhook',
+        timeDisplay: 'Real-time (continuous)',
+        status: 'ok',
+        lastRun: '5 minutes ago',
+        nextRun: 'Always active',
+        documentCount: 24,
+        lastDocument: 'memory-bank-entries-2026-02-16.md',
+        discordChannel: 'memory-bank',
+      },
+      {
+        id: 'notes_analyzer_agent',
+        name: 'Notes Analyzer Agent',
+        emoji: '📝',
+        schedule: '0 9 * * *',
+        timeDisplay: '9:00 AM EST',
+        status: 'ok',
+        lastRun: '2 hours ago',
+        nextRun: 'Tomorrow 9:00 AM',
+        documentCount: 8,
+        lastDocument: 'notes-analysis-2026-02-16.md',
+        discordChannel: 'notes',
+      },
     ];
 
     const cronData: CronJob[] = [
@@ -122,6 +148,22 @@ export default function MissionControl() {
         lastRun: '1d 8h ago',
         next: 'Today 8:30 AM',
         agent: 'managed_services_agent',
+      },
+      {
+        status: 'ok',
+        job: 'Memory Bank Agent',
+        schedule: 'webhook',
+        lastRun: '5m ago',
+        next: 'Always active',
+        agent: 'memory_bank_agent',
+      },
+      {
+        status: 'ok',
+        job: 'Notes Analyzer Agent',
+        schedule: '0 9 * * *',
+        lastRun: '2h ago',
+        next: 'Tomorrow 9:00 AM',
+        agent: 'notes_analyzer_agent',
       },
     ];
 
