@@ -555,6 +555,28 @@
         "strategy-services-pricing-2026-02-08",
         "project-gentlemans-vault"
       ]
+    },
+    {
+      "id": "mission-control-dashboard-2026-02-15",
+      "title": "🎯 Mission Control Dashboard — Autonomous Agent Ecosystem",
+      "path": "systems/mission-control-dashboard.md",
+      "folder": "systems",
+      "type": "system",
+      "createdAt": "2026-02-15T16:05:00.000Z",
+      "tags": [
+        "agents",
+        "automation",
+        "mission-control",
+        "business-intelligence",
+        "discord",
+        "autonomous",
+        "monitoring",
+        "spiritual-business",
+        "ai-trends",
+        "managed-services"
+      ],
+      "preview": "Complete Mission Control dashboard: 3 autonomous agents running daily (Spiritual Business @ 7:30 AM, AI Trends @ 8:00 AM, Managed Services @ 8:30 AM EST). Real-time status tracking, Discord notifications to #agent-reports, auto-generated daily documents, hybrid monitoring system. Zero-touch intelligence delivery for all 4 income streams + Presidio positioning.",
+      "links": []
     }
   ],
   "folders": [
@@ -593,8 +615,12 @@
     {
       "name": "health",
       "description": "Health, fitness, and diabetes management plans"
+    },
+    {
+      "name": "systems",
+      "description": "Operational systems, dashboards, and automated processes"
     }
   ],
-  "lastUpdated": "2026-02-15T03:15:00.000Z",
-  "totalDocuments": 26
+  "lastUpdated": "2026-02-15T16:05:00.000Z",
+  "totalDocuments": 27
 }
